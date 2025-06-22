@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Join Hanfi Foundation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    :root {
+      --bg-light: #ffffff;
+      --bg-dark: #1e1e2f;
+      --text-light: #2c3e50;
+      --text-dark: #ecf0f1;
+      --accent: #27ae60;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, var(--bg-light), #e0f0ff);
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      transition: background 0.5s, color 0.5s;
+    }
+    .dark-mode {
+      background: linear-gradient(to right, var(--bg-dark), #2f3640);
+      color: var(--text-dark);
+    }
+    .container {
+      background: var(--bg-light);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      width: 100%;
+      animation: fadeIn 1.2s ease forwards;
+      position: relative;
+      text-align: center;
+    }
+    .dark-mode .container {
+      background: var(--bg-dark);
+      color: var(--text-dark);
+    }
+    .logo {
+      width: 120px;
+      margin: 0 auto 20px;
+      display: block;
+    }
+    .toggle-darkmode {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      padding: 10px 15px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .toggle-darkmode:hover {
+      background: #219150;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    h2, h1 {
+      color: var(--text-light);
+    }
+    .dark-mode h2, .dark-mode h1 {
+      color: var(--text-dark);
+    }
+    p {
+      color: #555;
+      line-height: 1.6;
+    }
+    .dark-mode p {
+      color: #ccc;
+    }
+    .button {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 14px 28px;
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .button:hover {
+      background: #219150;
+    }
+    .buttons a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 20px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+    .insta { background: #e1306c; color: #fff; }
+    .insta:hover { background: #c1255b; }
+    .share { background: #3498db; color: white; }
+    .share:hover { background: #2980b9; }
+    .home { background: #2ecc71; color: white; }
+    .home:hover { background: #27ae60; }
+    footer {
+      margin-top: 30px;
+      font-size: 14px;
+      color: #aaa;
+    }
+    @media (max-width: 600px) {
+      .container {
+        padding: 25px;
+      }
+      .logo {
+        width: 80px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <button class="toggle-darkmode" onclick="toggleDarkMode()">🌓 Toggle Mode</button>
+  <!-- Join Prompt Section -->
+  <div class="container">
+    <img src="Screenshot 2025-06-22 205755.png" alt="Hanfi Foundation Logo" class="logo">
+    <h2>🌟 Join Hanfi Foundation</h2>
+    <p><strong>"Roshni Ki Taraf Safar"</strong> – A Journey Towards Light</p>
+    <p>
+      At <strong>Hanfi Foundation</strong>, we believe every small effort can spark big change. If you're passionate about helping others, empowering communities, and spreading hope — we’d love to have you with us.
+    </p>
+    <a href="https://forms.gle/bjoDh3z1B2FH5kt19" target="_blank" class="button">Join Now</a>
+    <div class="buttons">
+      <a href="https://www.instagram.com/hanfifoundationofficial?igsh=eGdkc3pwaDl5bmw3" target="_blank" class="insta">📸 Follow us on Instagram</a>
+      <a href="https://api.whatsapp.com/send?text=I%20just%20joined%20Hanfi%20Foundation!%20Be%20the%20change%20with%20me.%20Join%20here:%20https://forms.gle/bjoDh3z1B2FH5kt19" target="_blank" class="share">📤 Share on WhatsApp</a>
+    </div>
+    <footer>
+      #HanfiFoundation | #RoshniKiTarafSafar
+    </footer>
+  </div>
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+  </script>
+</body>
+</html>
